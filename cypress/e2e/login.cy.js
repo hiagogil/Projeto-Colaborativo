@@ -12,7 +12,7 @@ describe('Login', () => {
   it('Realizar login inválido', () => {
     cy.get('#email').type('hiago-gil@hfadfdafdil.com')
     cy.get('#senha').type('102fdasfdsf8gau')
-    cy.contains('Entrar').click()
+    cy.contains('Entrar').click() 
     cy.get('.alert').should('have.text', 'Problemas com o login do usuário')
   })
 })
